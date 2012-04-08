@@ -1,0 +1,332 @@
+/* 
+    Document   : newCascadeStyleSheet
+    Created on : 16/07/2010, 11:37:34 AM
+    Author     : señor pasajero
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+body {
+    color: #666;
+    margin: 0;    
+    font: 12px Tahoma, Geneva, sans-serif;
+}
+#page{
+    padding: 10px;   
+}
+#user-actions{
+    float: left;
+    width: 25px;
+    padding: 10px 0 0 0;
+    margin: 0 5px 0 0;
+    height: 25px;
+}
+#user-actions ul{
+    margin: 0;
+    padding: 0;
+}
+#user-actions ul li{
+    position: relative;
+    list-style: none;
+}
+#user-actions a{
+    display: block;
+    width: 23px;
+    height: 23px;
+    text-indent: -9999px;
+    /*background: #EEE;*/
+    border: 1px solid #FFF;
+}
+#user-actions a#show-publish{
+    background: url("images/publish.gif");
+}
+#user{
+    float: left;
+    width: 200px;
+}
+#state-active h1{
+    color: #666;
+    font-size: 14px;
+}
+div.states{
+    position: relative;
+    padding: 10px;
+    background: #EEE;
+    border: 1px solid #AAA;
+}
+div.states img{
+    display: block;
+}
+ul#state-actions{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+ul#state-actions li{
+    position: relative;
+    float: left;
+    list-style: none;
+}
+ul#state-actions li a{
+    padding: 5px 10px;
+    display: block;
+    background: #AAA;
+    text-decoration: none;
+    color: #EEE;
+}
+#states{
+    margin: 5px 0 0 0;
+}
+#states ul{
+    margin: 0;
+    padding: 0;
+}
+#states ul li{
+    position: relative;
+    float: left;
+    margin: 0 5px 5px 0;
+    list-style: none;
+}
+#states ul li.five{
+    margin: 0 0 5px 0;
+}
+#states ul li a{
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: #EEE;
+    text-align: center;
+    color: #AAA;
+    text-decoration: none;
+    border: 1px solid #AAA;
+}
+#states ul li div a{	
+    display: inline;
+    width: auto;
+    height: auto;
+    border: 0 none;    
+}
+#states ul li a span{
+    display: block;
+    padding: 10px 0 0 0;
+}
+#states-create{
+    top: 50px;
+    width: 300px;    
+}
+div.tooltip{
+	position: absolute;
+	top: 35px;
+	left: 15px;	
+	z-index: 2;
+	display: none;	
+}
+div.tooltip-wrapper{
+	position: relative;
+	background: #EEE;
+	border: 1px solid #AAA;
+	padding: 5px 10px;
+}
+div.tooltip span{
+	display: block;
+	position: absolute;
+	top: -5px;
+	left: 5px;
+	width: 7px;
+	height: 6px;
+	background: url("images/tooltip-bullet.gif");
+	text-indent: -9999px;	
+}
+#publish{
+    width: 350px;
+    top: 40px;
+}
+#imagen-upload{
+    top: 40px;
+    width: 300px;
+}
+#wall{
+    margin-left: 250px;
+}
+div.entry-wrapper{
+    position: relative;    
+    padding: 5px 0 0 0;   
+    /*overflow: hidden;*/
+}
+div.entry{
+    position: relative;
+    float: left;
+    /*width: auto;*/
+    padding: 5px;
+    border: 1px solid #AAA;
+    overflow: hidden;
+}
+div.visit div.entry p{
+    color: #C00;
+}
+div.entry-width{
+    width: 100%;
+    overflow: hidden;    
+}
+div.entry p{
+    color: #666;
+}
+div.entry-bullet{
+    position: absolute;
+    top: 20px;
+    left: -9px;
+    width: 10px;
+    height: 12px;
+    background: url("images/publish-bullet.gif");
+    z-index: 2;
+}
+ul.entry-actions{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    margin: 0;
+    padding: 0;
+    display: none;
+    z-index: 1;
+}
+ul.entry-actions li{
+    float: left;
+    list-style: none;
+}
+ul.entry-actions li a{
+    font-size: 10px;
+}
+div.entry1{
+    font-size: 16px;
+}
+div.active p{
+    color: #333;
+}
+div.window, div.window-up{
+    position: absolute;        
+    background: #EEE;
+    border: 1px solid #AAA;
+    z-index: 2;
+    display: none;
+}
+div.window{
+    left: 0;
+}
+div.window-up{
+    right: 0;
+}
+div.window-wrapper{
+    position: relative;
+    padding: 10px;
+}
+div.window h1, div.window-up h1{
+    position: absolute;    
+    width: 10px;
+    height: 11px;
+    background: #000;
+}
+div.window h1{
+    top: -11px;
+    left: 20px;
+    background: url("images/window.gif");
+}
+div.window-up h1{
+    bottom: -11px;
+    right: 25px;
+    background: url("images/window-up.gif");
+    
+}
+#final{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#final ul{
+    
+}
+#final ul li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0 0 0 5px;
+}
+#final ul li a{
+
+}
+#login{
+    /*position: absolute;*/    
+    bottom: 40px;
+}
+#forgot{
+    bottom: 40px;
+    width: 190px;
+}
+#use, #me{
+    bottom: 40px;
+    width: 250px;
+}
+
+
+h1, h2, h3{
+    margin: 0;
+    font-weight: normal;
+}
+h1{
+    font-size: 18px;
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 14px;
+}
+h1 span{
+    display: none;
+}
+p{
+    margin: 10px;
+}
+a{
+    color: #666;   
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+form label{
+    display: block;  
+}
+form.user label{
+    float: left;
+    margin: 0 5px 0 0;
+    width: 80px;
+    color: #999;
+    text-align: right;
+}
+form.user h2{
+    padding: 5px 0;
+    border-bottom: 1px dashed #AAA;
+}
+form input, form textarea{
+    border: 1px solid #AAA;
+    padding: 5px 0;
+}
+form input.error, form textarea.error{
+    border: 1px dotted red;
+}
+form #btn-submit, form .btn-submit{
+    background: #FFF;
+    cursor: pointer;
+    color: #666;
+    font-weight: bold;
+    padding: 5px 10px;
+}
